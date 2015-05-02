@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  root  'static_pages#index'
+  #get 'static_pages/index'
+
   devise_for :users
   # ou have defined root_url to *something* in your config/routes.r
   # root to: "home#index"
