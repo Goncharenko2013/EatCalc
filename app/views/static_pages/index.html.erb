@@ -24,14 +24,19 @@
           <%= link_to 'Log Out', destroy_user_session_path, :method => :delete  %>
         <% else %>
           <%= form_for(@user, url: session_path(@user), html: {id: 'signin-form'}) do |f| %>
-            <div class="form-group">
+            <div class="form-group" style="width: 25%">
               <%= f.label :email %><br />
               <%= f.email_field :email, autofocus: true, class: 'form-control' %>
             </div>
-            <%= f.label :password %><br />
-            <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
-
-            <%= f.submit "Log in" %>
+            <div class="form-group" style="width: 25%">
+              <%= f.label :password %><br />
+              <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+            </div>
+                <div class="form-group">
+                  <%= f.check_box :remember_me, class: "checkbox" %>
+                  <%= f.label :remember_me %>
+                </div>
+                <%= f.submit "Log in" %>
           <% end %>
         <% end %>
           </div>
