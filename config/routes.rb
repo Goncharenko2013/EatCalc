@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root  'static_pages#index'
   #get 'static_pages/index'
 
-  devise_for :users, controllers: { sessions: "users/sessions", registrations: "users/registrations" }
+  devise_for :users, controllers: { registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords" }
+
   # ou have defined root_url to *something* in your config/routes.r
   # root to: "home#index"
 
