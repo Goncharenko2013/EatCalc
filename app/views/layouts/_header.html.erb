@@ -2,17 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12" align="center" style="background-color:lavender;">
-        <%= image_tag 'eatcalc_header.png', class: 'header' %>
+
+        <%= link_to image_tag('eatcalc_header.png', alt: "Rails"), root_path %>
       </div>
       <div class="pull-right">
         <div class="col-sm-12" align="center">
           <nav>
             <ul class="nav nav-pills" role="tablist">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">EatLog</a></li>
-              <li><a href="#">Analysis</a></li>
-              <li><a href="#">ReadyMealsCalc</a></li>
-              <li><a href="#">Blogs&Info</a></li>
+              <li class="active"><%= link_to "Home", root_path %></li>
+              <li><%= link_to "EatLog", '#' %></li>
+              <li><%= link_to "Analysis", '#' %></li>
+              <li><%= link_to "ReadyMealsCalc", '#' %></li>
+              <li><%= link_to "Blogs&Info", '#' %></li>
             </ul>
           </nav>
         </div>
