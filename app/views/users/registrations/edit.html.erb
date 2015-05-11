@@ -1,9 +1,13 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<div class="container" xmlns="http://www.w3.org/1999/html">
+<h2 align="center" style="color:#5ED85E">Edit <%= resource_name.to_s.humanize %></h2>
+
+  <div class="row">
+    <div class="col-sm-12" align="center" style="background-color:lavender;">
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+  <div class="field" style="color:#337AB7">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
@@ -12,28 +16,65 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div class="field">
+  <div class="field" style="color:#337AB7">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div class="field">
+  <div class="field" style="color:#337AB7">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="field">
+  <div class="field" style="color:#337AB7">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
+    <div class="field" style="color:#337AB7">
+      <%= f.label :password_confirmation %><br/>
+      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+
+    <div class="field" style="color:#337AB7">
+      <%= f.label :height %> <i>(leave blank if you don't want to change it)</i><br/>
+      <%= f.text_field :height, :placeholder => 'in cm', autocomplete: "off" %>
+    </div>
+
+    <div class="field" style="color:#337AB7">
+      <%= f.label :weight %> <i>(leave blank if you don't want to change it)</i><br/>
+      <%= f.text_field :weight, :placeholder => 'in kg', autocomplete: "off" %>
+    </div>
+
+    <div class="field" style="color:#337AB7">
+      <%= f.label :gender %> <i>(leave blank if you don't want to change it)</i><br/>
+      <%= f.text_field :gender, :placeholder => 'man or woman', autocomplete: "off" %>
+    </div>
+
+    <div class="field" style="color:#337AB7">
+      <%= f.label :age %> <i>(leave blank if you don't want to change it)</i><br/>
+      <%= f.text_field :age, :placeholder => 'full years', autocomplete: "off" %>
+    </div>
+
+    <div class="field" style="color:#337AB7">
+      <%= f.label :lifestyle %> <i>(leave blank if you don't want to change it)</i><br/>
+      <%= f.text_field :lifestyle, :placeholder => 'activity: low, medium, high', autocomplete: "off" %>
+    </div>
+    </br>
+
+  <div class="actions" style="color:#337AB7">
     <%= f.submit "Update" %>
   </div>
 <% end %>
 
-<h3>Cancel my account</h3>
+<h3 style="color:#337AB7">Cancel my account</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<div style="color:#337AB7">
+ <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+</div>
 
-<%= link_to "Back", :back %>
+<%= link_to "Back", :back %><br><br>
+
+    </div>
+  </div>
+</div>

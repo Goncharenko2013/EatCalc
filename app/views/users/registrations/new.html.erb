@@ -24,6 +24,31 @@
             <%= f.label :password_confirmation %><br/>
             <%= f.password_field :password_confirmation, autocomplete: "off" %>
           </div>
+
+          <div class="field" style="color:#337AB7">
+            <%= f.label :height %><br/>
+            <%= f.text_field :height, :placeholder => 'in cm', autocomplete: "off" %>
+          </div>
+
+          <div class="field" style="color:#337AB7">
+            <%= f.label :weight %><br/>
+            <%= f.text_field :weight, :placeholder => 'in kg', autocomplete: "off" %>
+          </div>
+
+          <div class="field" style="color:#337AB7">
+            <%= f.label :gender %><br/>
+            <%= f.text_field :gender, :placeholder => 'man or woman', autocomplete: "off" %>
+          </div>
+
+          <div class="field" style="color:#337AB7">
+            <%= f.label :age %><br/>
+            <%= f.text_field :age, :placeholder => 'full years', autocomplete: "off" %>
+          </div>
+
+          <div class="field" style="color:#337AB7">
+            <%= f.label :lifestyle %><br/>
+            <%= f.text_field :lifestyle, :placeholder => 'activity: low, medium, high', autocomplete: "off" %>
+          </div>
           </br>
 
           <div class="actions" style="color:#337AB7">
