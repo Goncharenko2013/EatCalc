@@ -48,7 +48,7 @@
 
     <div class="field" style="color:#337AB7">
       <%= f.label :gender %> <i>(leave blank if you don't want to change it)</i><br/>
-      <%= f.text_field :gender, :placeholder => 'man or woman', autocomplete: "off" %>
+      <%= f.select :gender, [ 'Male', 'Fimale' ], :prompt => 'Select One' %>
     </div>
 
     <div class="field" style="color:#337AB7">
@@ -58,7 +58,7 @@
 
     <div class="field" style="color:#337AB7">
       <%= f.label :lifestyle %> <i>(leave blank if you don't want to change it)</i><br/>
-      <%= f.text_field :lifestyle, :placeholder => 'activity: low, medium, high', autocomplete: "off" %>
+      <%= f.select :lifestyle, [ 'Activity low', 'Activity medium', 'Activity high' ], :prompt => 'Select One' %>
     </div>
     </br>
 

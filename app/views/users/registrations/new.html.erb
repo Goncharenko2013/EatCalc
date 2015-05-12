@@ -37,17 +37,17 @@
 
           <div class="field" style="color:#337AB7">
             <%= f.label :gender %><br/>
-            <%= f.text_field :gender, :placeholder => 'man or woman', autocomplete: "off" %>
+            <%= f.select :gender, [ 'Male', 'Fimale' ], :prompt => 'Select One' %>
           </div>
 
           <div class="field" style="color:#337AB7">
             <%= f.label :age %><br/>
-            <%= f.text_field :age, :placeholder => 'full years', autocomplete: "off" %>
+            <%= f.text_field :age, :placeholder => 'full years',  autocomplete: "off" %>
           </div>
 
           <div class="field" style="color:#337AB7">
             <%= f.label :lifestyle %><br/>
-            <%= f.text_field :lifestyle, :placeholder => 'activity: low, medium, high', autocomplete: "off" %>
+            <%= f.select :lifestyle, [ 'Activity low', 'Activity medium', 'Activity high' ], :prompt => 'Select One' %>
           </div>
           </br>
 
