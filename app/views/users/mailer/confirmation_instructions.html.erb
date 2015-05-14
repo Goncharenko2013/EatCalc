@@ -1,5 +1,12 @@
-<p>Welcome <%= @email %>!</p>
+<div class="container" xmlns="http://www.w3.org/1999/html">
 
-<p>You can confirm your account email through the link below:</p>
+  <p align="center" style="color:#5ED85E">Welcome <%= @email %>!</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+  <div class="row">
+    <div class="col-sm-12" align="center" style="background-color:lavender;">
+      <p style="color:#337AB7">You can confirm your account email through the link below:</p>
+
+      <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+    </div>
+  </div>
+</div>

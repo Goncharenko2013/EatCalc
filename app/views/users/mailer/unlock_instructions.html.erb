@@ -1,7 +1,13 @@
-<p>Hello <%= @resource.email %>!</p>
+<div class="container" xmlns="http://www.w3.org/1999/html">
+  <p align="center" style="color:#5ED85E">Hello <%= @resource.email %>!</p>
 
-<p>Your account has been locked due to an excessive number of unsuccessful sign in attempts.</p>
+  <p style="color:#337AB7">Your account has been locked due to an excessive number of unsuccessful sign in attempts.</p>
 
-<p>Click the link below to unlock your account:</p>
+  <div class="row">
+    <div class="col-sm-12" align="center" style="background-color:lavender;">
+      <p style="color:#337AB7">Click the link below to unlock your account:</p>
 
-<p><%= link_to 'Unlock my account', unlock_url(@resource, unlock_token: @token) %></p>
+      <p><%= link_to 'Unlock my account', unlock_url(@resource, unlock_token: @token) %></p>
+    </div>
+  </div>
+</div>
