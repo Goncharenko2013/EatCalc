@@ -7,12 +7,10 @@
 
 
       <p align="center" style="color:#337AB7">
-        <%= link_to 'Sign In', new_user_session_path, :method => :get %>
-        </br></br>
-        <%= link_to image_tag('coffee_coffeCap@.png', alt: "Rails"), new_user_session_path %>
+        <%= link_to 'Sign In', '#', id: 'show_sing_in_form' %>
       </p>
 
-      <div align="center" style="color:#337AB7">
+      <div class="cup" align="center" style="color:#337AB7">
 
         <% if user_signed_in? %>
             <p style="color:#5ED85E"><strong>Hi, <%= @user.email %></strong></p>
@@ -21,7 +19,13 @@
 
         <% else %>
             <%= form_for(@user, url: session_path(@user), html: {id: 'signin-form'}) do |f| %>
-
+            <div class="form-group" style="width: 25%">
+              <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'email' %>
+            </div>
+            <div class="form-group" style="width: 25%">
+              <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'password'  %>
+            </div>
+              <%= f.submit "Log in" %>
             <% end %>
         <% end %>
       </div>
@@ -46,6 +50,12 @@
     </div>
   </div>
 </div>
+<script>
+  $('#show_sing_in_form').click(function (e) {
+    e.preventDefault();
+    $('.new_user').toggle();
+  });
+</script>
 
 
 

@@ -47,7 +47,7 @@
 
           <div class="field" style="color:#337AB7">
             <%= f.label :lifestyle %><br/>
-            <%= f.select :lifestyle, [ 'Activity low', 'Activity medium', 'Activity high' ], :prompt => 'Select One' %>
+            <%= f.select :lifestyle, User::ACTIVITIES, :prompt => 'Select One' %>
           </div>
           </br>
 

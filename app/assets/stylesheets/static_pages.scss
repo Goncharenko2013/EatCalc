@@ -1,3 +1,20 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cup {
+  background-image: url(coffee_coffeCap@.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 275px;
+  height: 183px;
+  margin: auto;
+  .new_user {
+    display: none;
+  }
+}
+
+.alert {
+  padding: 5px;
+  margin-bottom: 5px;
+}
