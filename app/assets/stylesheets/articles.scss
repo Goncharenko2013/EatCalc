@@ -1,3 +1,22 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ul.article_list {
+  margin: 0; /* Обнуляем значение отступов */
+  padding: 4px; /* Значение полей */
+  }
+ul.article_list div {
+  display: inline; /* Отображать как строчный элемент */
+  margin-right: 5px; /* Отступ слева */
+  border: 1px solid #000; /* Рамка вокруг текста */
+  padding: 3px; /* Поля вокруг текста */
+  color: #337AB7;
+}
+.green_title {
+  text-align:center;
+  color:#5ED85E;
+}
+
+.col-sm-12 {
+  background-color:lavender;
+}
