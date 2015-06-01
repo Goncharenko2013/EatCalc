@@ -15,6 +15,14 @@
   .form-group1 {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .form-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
 
@@ -27,17 +35,31 @@
   background-color:lavender;
   color:#337AB7;
   text-align:center;
+  font-weight: bold;
+  font-size: 1.2em;
   p {
     text-align:center;
   }
+  .Hi_email {
+    color: #f61858;
+    font-weight: bold;
+    font-size: 1.3em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    a {
+      color: #f61858;
+    }
+  }
 }
 
-.col-sm-8{
+.col-sm-8 {
   background-color:lavenderblush;
-  color:#337AB7
+  color:#337AB7;
+  font-size: 1.5em;
 }
 
-.Hi_email {
-  color:#5ED85E;
-  font-weight: bold;
-}
+
+
+

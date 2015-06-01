@@ -2,27 +2,28 @@
   <h1 align="center" style="color:#5ED85E">Be Healthy, wealthy and wise!</h1>
 
   <div class="row">
-    <div class="col-sm-4" style="background-color:lavender;">
+    <div class="col-sm-4">
       <br>
 
-
-      <p align="center" style="color:#337AB7">
+      <p>
         <%= link_to 'Sign In', '#', id: 'show_sing_in_form' %>
       </p>
 
-      <div class="cup" align="center" style="color:#337AB7">
+      <div class="cup" >
 
         <% if user_signed_in? %>
-            <p style="color:#5ED85E"><strong>Hi, <%= @user.email %></strong></p>
-            <%= link_to 'Log Out', destroy_user_session_path, :method => :delete %>
+            <div class='Hi_email'>
+            <p >Hi, </br><%= @user.email %> !</p>
 
+            <%= link_to 'Log Out', destroy_user_session_path, :method => :delete %>
+            </div>
 
         <% else %>
             <%= form_for(@user, url: session_path(@user), html: {id: 'signin-form'}) do |f| %>
-            <div class="form-group1" style="width: 70%">
+            <div class="form-group1">
               <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'email' %>
             </div>
-            <div class="form-group" style="width: 70%">
+            <div class="form-group">
               <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'password'  %>
             </div>
               <%= f.submit "Log in" %>
@@ -31,21 +32,18 @@
       </div>
       <br>
 
-      <p align="center" style="color:#337AB7">
+      <p>
         <%= link_to 'Not Singed Up yet? Sign Up Now!', new_user_registration_path, :method => :get %>
       </p>
       <br>
 
     </div>
-    <div class="col-sm-8" style="background-color:lavenderblush; color:#337AB7">
+    <div class="col-sm-8">
       <p>
-      <h4>
         Here we consider the calorie and nutritional value (protein, fat and carbohydrates) of food eaten within a
-        certain
-        period - day, week, month e.c.<br><br>
+        certain period - day, week, month e.c.<br><br>
         In fact, we are in a diary and make corrections in the diet in order to achieve certain goals.<br><br>
         The aim of the project is the organization of a healthy diet and weight control.<br><br>
-      </h4>
       </p>
     </div>
   </div>
