@@ -9,11 +9,11 @@
         <%= link_to 'Sign In', '#', id: 'show_sing_in_form' %>
       </p>
 
-      <div class="cup" >
+      <div class="cup<% if user_signed_in? %> clear<% end %>" >
 
         <% if user_signed_in? %>
             <div class='Hi_email'>
-            <p >Hi, </br><%= @user.email %> !</p>
+            <p >Hi, </br><%= @user.email %>!</p>
 
             <%= link_to 'Log Out', destroy_user_session_path, :method => :delete %>
             </div>
