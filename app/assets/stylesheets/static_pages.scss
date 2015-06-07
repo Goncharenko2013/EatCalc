@@ -2,37 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.cup {
-  background-image: url(coffee_coffeCap@.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 275px;
-  height: 183px;
-  margin: auto;
-  .new_user {
-    display: none;
-  }
-  .form-group1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    text-align: center;
-    .form-control {
-      text-align: center;
-    }
-  }
-  .form-group {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    .form-control {
-      text-align: center;
-    }
-  }
-}
-
 .alert {
   padding: 5px;
   margin-bottom: 5px;
@@ -44,13 +13,44 @@
   text-align:center;
   font-weight: bold;
   font-size: 1.2em;
+  .cup {
+    background-image: url(coffee_coffeCap@.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 275px;
+    height: 183px;
+    margin: auto;
+    .new_user {
+      display: none;
+    }
+    .form-group1 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      text-align: center;
+      .form-control {
+        text-align: center;
+      }
+    }
+    .form-group {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      .form-control {
+        text-align: center;
+      }
+    }
+  }
+
   p {
     text-align:center;
   }
   .Hi_email {
     color: #F35C2F;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.1em;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
