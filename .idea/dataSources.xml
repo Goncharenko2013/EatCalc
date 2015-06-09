@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3983724890">
+  <component name="DataSourceManagerImpl" format="xml" hash="278928604">
     <data-source source="LOCAL" name="Rails EatCalc: development" uuid="b638c250-d00b-4ff8-b925-d5dd4687d0bb">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
