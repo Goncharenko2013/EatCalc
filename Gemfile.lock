@@ -57,6 +57,7 @@ GEM
     arbre (1.0.3)
       activesupport (>= 3.0.0)
     arel (6.0.0)
+    aws_cf_signer (0.1.3)
     bcrypt (3.1.10)
     bcrypt (3.1.10-x86-mingw32)
     binding_of_caller (0.7.2)
@@ -67,6 +68,9 @@ GEM
     builder (3.2.2)
     byebug (4.0.5)
       columnize (= 0.9.0)
+    cloudinary (1.1.0)
+      aws_cf_signer
+      rest-client
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -83,8 +87,11 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    domain_name (0.5.24)
+      unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     execjs (2.5.2)
+    ffi (1.9.8-x86-mingw32)
     formtastic (3.1.3)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.4.1)
@@ -93,6 +100,8 @@ GEM
     has_scope (0.6.0)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
     i18n (0.7.0)
     inherited_resources (1.6.0)
       actionpack (>= 3.2, < 5)
@@ -121,6 +130,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.6.0)
     multi_json (1.11.0)
+    netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     nokogiri (1.6.6.2-x86-mingw32)
@@ -174,6 +184,15 @@ GEM
     ref (1.0.5)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    rest-client (1.8.0-x86-mingw32)
+      ffi (~> 1.9)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     sass (3.4.13)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -207,6 +226,10 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.1)
+    unf_ext (0.0.7.1-x86-mingw32)
     warden (1.2.3)
       rack (>= 1.0)
     web-console (2.1.2)
@@ -222,6 +245,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   byebug
+  cloudinary
   coffee-rails (~> 4.1.0)
   devise (~> 3.4.1)
   execjs
