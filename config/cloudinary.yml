@@ -1,19 +1,19 @@
 ---
 development:
-  cloud_name: dksyz1o5r
-  api_key: '454794268862747'
-  api_secret: aowma3fSCDuOB0K_j2Wah1AeKmg
-  enhance_image_tag: true
-  static_image_support: false
+  cloud_name: Rails.application.secrets.cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
+  enhance_image_tag: Rails.application.secrets.enhance_image_tag
+  static_image_support: Rails.application.secrets.static_image_support
 production:
-  cloud_name: dksyz1o5r
-  api_key: '454794268862747'
-  api_secret: aowma3fSCDuOB0K_j2Wah1AeKmg
-  enhance_image_tag: true
-  static_image_support: true
+  cloud_name: Rails.application.secrets.cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
+  enhance_image_tag: Rails.application.secrets.enhance_image_tag
+  static_image_support: Rails.application.secrets.static_image_support
 test:
-  cloud_name: dksyz1o5r
-  api_key: '454794268862747'
-  api_secret: aowma3fSCDuOB0K_j2Wah1AeKmg
-  enhance_image_tag: true
-  static_image_support: false
+  cloud_name: Rails.application.secrets.cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
+  enhance_image_tag: Rails.application.secrets.enhance_image_tag
+  static_image_support: Rails.application.secrets.static_image_support

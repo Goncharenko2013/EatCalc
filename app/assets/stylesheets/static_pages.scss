@@ -14,7 +14,7 @@
   font-weight: bold;
   font-size: 1.2em;
   .cup {
-    background-image: url(coffee_coffeCap@.png);
+    background-image: image-url('coffee_coffeCap@.png');
     background-repeat: no-repeat;
     background-position: center;
     width: 275px;
@@ -60,7 +60,7 @@
     }
   }
   .clear {
-    background-image: url(coffe_cup@_coffe_35_op.png);
+    background-image: image-url('coffe_cup@_coffe_35_op.png');
   }
 }
 
