@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product: MyString
+  water: 1.5
+  proteins: 1.5
+  fats: 1.5
+  carbohydrates: 1.5
+  ccal: 1
+
+two:
+  product: MyString
+  water: 1.5
+  proteins: 1.5
+  fats: 1.5
+  carbohydrates: 1.5
+  ccal: 1
