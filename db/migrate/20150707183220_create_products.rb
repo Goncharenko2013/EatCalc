@@ -7,6 +7,7 @@ class CreateProducts < ActiveRecord::Migration
       t.float :fats
       t.float :carbohydrates
       t.integer :ccal
+      t.integer :product_category_id
 
       t.timestamps null: false
     end

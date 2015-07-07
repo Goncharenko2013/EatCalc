@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150707185233) do
+ActiveRecord::Schema.define(version: 20150707200659) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -53,23 +53,10 @@ ActiveRecord::Schema.define(version: 20150707185233) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "calories", force: :cascade do |t|
-    t.string   "product"
-    t.integer  "water"
-    t.integer  "proteins"
-    t.integer  "fats"
-    t.integer  "carbohydrates"
-    t.integer  "ccal"
-    t.string   "category_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
   create_table "product_categories", force: :cascade do |t|
-    t.string   "category_name"
-    t.integer  "category_code"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
@@ -79,8 +66,9 @@ ActiveRecord::Schema.define(version: 20150707185233) do
     t.float    "fats"
     t.float    "carbohydrates"
     t.integer  "ccal"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.integer  "product_category_id"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "users", force: :cascade do |t|
