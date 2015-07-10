@@ -1,11 +1,11 @@
-ActiveAdmin.register Product do
+ActiveAdmin.register ProductCategory do
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-# permit_params :list, :of, :attributes, :on, :model
+  permit_params :name, :id, roles: []
 
-  permit_params :product, :water, :proteins, :fats, :carbohydrates, :product_category_id, :ccal, roles: []
+# permit_params :list, :of, :attributes, :on, :model
 #
 # or
 #
