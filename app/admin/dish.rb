@@ -15,4 +15,18 @@ permit_params :name, :id, dish_products_attributes: [:product_id, :weight]
     end
     f.actions
   end
+
+  show do
+    attributes_table do
+      row :name
+      row :user_id
+      table_for dish.dish_products do
+        column "Product" do |dish_product|
+          dish_product.product.product
+        end
+        column :weight
+      end
+    end
   end
+
+end
