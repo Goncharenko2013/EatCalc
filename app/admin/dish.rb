@@ -8,7 +8,8 @@ permit_params :name, :id, dish_products_attributes: [:product_id, :weight]
       f.input :name
       f.inputs "Products" do
         f.has_many :dish_products, heading: false, allow_destroy: true do |dp|
-          dp.input :product_id, :as => :select, :collection => Product.all.pluck(:product, :id)
+          dp.input :product_id, :as => :select, :collection => option_groups_from_collection_for_select(ProductCategory.all, :products, :name, :id, :product)
+          # dp.input :product_id, :as => :select, :collection => Product.all.pluck(:product, :id)
           dp.input :weight
         end
       end
