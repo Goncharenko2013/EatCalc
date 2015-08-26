@@ -1,15 +1,17 @@
 ActiveAdmin.register Dish do
 
 
-permit_params :name, :id, roles: []
-#accepts_nested_attributes_for :products, :dish_products
+permit_params :name, :id, dish_products_attributes: [:product_id, :weight]
 
   form do |f|
     f.inputs 'Dish' do
       f.input :name
-      f.input :products, as: :check_boxes, collection: Product.all
-
-      #f.input :weight
+      f.inputs "Products" do
+        f.has_many :dish_products, heading: false, allow_destroy: true do |dp|
+          dp.input :product_id, :as => :select, :collection => Product.all.pluck(:product, :id)
+          dp.input :weight
+        end
+      end
     end
     f.actions
   end
