@@ -4,6 +4,6 @@ class Dish < ActiveRecord::Base
   accepts_nested_attributes_for :dish_products
 
   validates :name, :presence => true
-
-
+  validates :name, :uniqueness => { :case_sensitive => false }
+  validates :name, :uniqueness => true
 end
