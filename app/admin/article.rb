@@ -4,6 +4,13 @@ ActiveAdmin.register Article do
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
  permit_params :title, :content, roles: []
+
+ #form do |f|
+   #f.inputs do
+     #f.input :content
+     #f.input :content, :input_html => { :class => 'mce_editor' }
+   #end
+ #end
 #
 # or
 #
