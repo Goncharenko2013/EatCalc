@@ -5,10 +5,12 @@ ActiveAdmin.register Article do
 #
  permit_params :title, :content, roles: []
 
+ #<%= tinymce %>
+
  #form do |f|
    #f.inputs do
      #f.input :content
-     #f.input :content, :input_html => { :class => 'mce_editor' }
+     #f.text_area :content, :class => "tinymce", :rows => 40, :cols => 120
    #end
  #end
 #
@@ -22,3 +24,4 @@ ActiveAdmin.register Article do
 
 
 end
+
