@@ -13,11 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require tinymce-jquery
 //= require_tree .
-
-tinyMCE.init({
-    mode : "specific_textareas",
-    editor_selector : "mce_editor"
-});
-
