@@ -5,6 +5,12 @@ class ApplicationController < ActionController::Base
 
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
+  def cms_config
+    params = {"timestamp" => Time.now.to_i.to_s, "mode"=>"tinymce"}
+    params = Cloudinary::Utils.sign_request(params)
+    render :json=>{:cloudinary_cms_url=>"https://cloudinary.com/console/media_library/cms?#{params.to_query}"}
+  end
+
   protected
 
   def configure_permitted_parameters

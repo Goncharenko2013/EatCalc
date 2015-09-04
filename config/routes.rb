@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   devise_for :users, controllers: { registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords" }
 
+  get 'cms_config' => 'application#cms_config'
+
   # ou have defined root_url to *something* in your config/routes.r
   # root to: "home#index"
 
